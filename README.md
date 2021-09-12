@@ -1,10 +1,10 @@
 # guja
 
 1. [hello-world.lua](https://github.com/herereadthis/guja/blob/main/hello-world.lua) - hello world
+1. [comments](https://github.com/herereadthis/guja/blob/main/comments.lua)
 1. [factorial](https://github.com/herereadthis/guja/blob/main/factorial.lua) - simple resursive function, user input
 1. [dofile](https://github.com/herereadthis/guja/blob/main/dofile.lua) - run a chunk from another file
-1. [comments](https://github.com/herereadthis/guja/blob/main/comments.lua)
-1. [type](https://github.com/herereadthis/guja/blob/main/type.lua) - basic types: `nil`, `boolean`, `string`, `userdata`, `function`, `thread`, `table`
+1. [types](https://github.com/herereadthis/guja/blob/main/types.lua) - basic types: `nil`, `boolean`, `string`, `userdata`, `function`, `thread`, `table`. Also `integer` vs `float`
 1. [eight-queen](https://github.com/herereadthis/guja/blob/main/eight-queen.lua) - examples of functions to solve a chess problem
 
 ## Command Line
@@ -36,6 +36,17 @@ lua -i
   <tr>
     <td>else</td><td>for</td><td>in</td>
     <td>or</td><td>true</td><td></td>
+  </tr>
+</table>
+
+### Operators
+
+<table>
+  <tr>
+    <td><</td><td>less than</td><td><=</td><td>less than or equal to</td><td>==</td><td>equal to</td>
+  </tr>
+  <tr>
+    <td>></td><td>greater than</td><td>>=</td><td>greater than or equal to</td><td>~=</td><td>not equal to</td>
   </tr>
 </table>
 

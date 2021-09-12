@@ -10,3 +10,9 @@ print(type(type(X)))        --> string (result of type is always a string)
 print(type(a))              --> nil
 a = 10
 print(type(a))              --> number
+
+--[[
+In Lua, numbers can be integers or double-precision floating point numbers. 
+Specify a float by adding a decimal.
+Both integers and floats are number types
+]]
