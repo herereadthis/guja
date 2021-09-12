@@ -5,6 +5,7 @@
 1. [dofile](https://github.com/herereadthis/guja/blob/main/dofile.lua) - run a chunk from another file
 1. [comments](https://github.com/herereadthis/guja/blob/main/comments.lua)
 1. [type](https://github.com/herereadthis/guja/blob/main/type.lua) - basic types: `nil`, `boolean`, `string`, `userdata`, `function`, `thread`, `table`
+1. [eight-queen](https://github.com/herereadthis/guja/blob/main/eight-queen.lua) - examples of functions to solve a chess problem
 
 ## Command Line
 
