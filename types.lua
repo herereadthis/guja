@@ -16,3 +16,15 @@ In Lua, numbers can be integers or double-precision floating point numbers.
 Specify a float by adding a decimal.
 Both integers and floats are number types
 ]]
+
+-- long strings and multiline strings
+template = [[
+<html>
+<head>
+  <title>Hello World</title>
+</head>
+<body>
+  <h1>Hello World</h1>
+</body>
+</html>
+]]
