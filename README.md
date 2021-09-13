@@ -5,7 +5,9 @@
 1. [factorial](https://github.com/herereadthis/guja/blob/main/factorial.lua) - simple resursive function, user input
 1. [dofile](https://github.com/herereadthis/guja/blob/main/dofile.lua) - run a chunk from another file
 1. [types](https://github.com/herereadthis/guja/blob/main/types.lua) - basic types: `nil`, `boolean`, `string`, `userdata`, `function`, `thread`, `table`. Also `integer` vs `float`
+1. [math](https://github.com/herereadthis/guja/blob/main/math.lua) - examples from `math` library
 1. [eight-queen](https://github.com/herereadthis/guja/blob/main/eight-queen.lua) - examples of functions to solve a chess problem
+1. [strings](https://github.com/herereadthis/guja/blob/main/strings.lua) - examples, along with `string` library examples
 
 ## Command Line
 
