@@ -9,6 +9,7 @@
 1. [eight-queen](https://github.com/herereadthis/guja/blob/main/eight-queen.lua) - examples of functions to solve a chess problem
 1. [strings](https://github.com/herereadthis/guja/blob/main/strings.lua) - examples, along with `string` library examples
 1. [tables](https://github.com/herereadthis/guja/blob/main/tables.lua) - lists, records, arrays
+1. [functions](https://github.com/herereadthis/guja/blob/main/functions.lua)
 
 ## Command Line
 

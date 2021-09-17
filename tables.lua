@@ -67,7 +67,7 @@ end
 myTable = {10, "foo", x = 10, y = 20}
 tableTraversePrint(myTable)   --> 1 10, 2 foo, y 20, x 10
 
--- Safe navigation
+-- Safe navigation, aka lodash _.getIn()
 print("\nSafe navigation")
 myNestedTable = {
   foo = 123,
@@ -79,6 +79,22 @@ myNestedTable = {
   }
 }
 print(myNestedTable.foo)      --> 123
-print(myNestedTable?.foo)
+E = {}
+print((((myNestedTable or E).bar or E).baz or E).red)    --> 5
+print((((myNestedTable or E).bar or E).baz or E).blue)   --> nil
+
+print("\ntable insert")
+t = {5, 15, 20}
+table.insert(t, 2, 10)
+print(table.concat(t, ", "))        --> 5, 10, 15, 20
+table.insert(t, 25) -- if only 2 args added, then insert behaves like push
+print(table.concat(t, ", "))        --> 5, 10, 15, 20, 25
+
+print("\ntable remove")
+r = {5, 10, 15, 17, 20, 25}
+table.remove(r, 4)
+print(table.concat(r, ", "))        --> 5, 10, 15, 20, 25
+table.remove(r) -- if only 1 arg, then remove behaves like pop
+print(table.concat(r, ", "))        --> 5, 10, 15, 20
 
 
