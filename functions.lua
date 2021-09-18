@@ -84,6 +84,19 @@ a, b, c = table.unpack(seq5)
 print(b, c)                               --> 3  5
 print(addVariadic(table.unpack(seq5)))    --> 28
 
+print("\nTail calls") 
+--[[
+functions that call a function at the end. a goto
+a key thing is there is nothing else to do
+]]
+function functionB (n)
+  if n > 0 then 
+    print(n)
+    return functionB(n - 1) -- returning a function makes it a tail call
+  end
+end
+
+functionB(4) --> 4 3 2 1
 
 
 

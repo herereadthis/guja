@@ -10,6 +10,7 @@
 1. [strings](https://github.com/herereadthis/guja/blob/main/strings.lua) - examples, along with `string` library examples
 1. [tables](https://github.com/herereadthis/guja/blob/main/tables.lua) - lists, records, arrays
 1. [functions](https://github.com/herereadthis/guja/blob/main/functions.lua)
+1. [io](https://github.com/herereadthis/guja/blob/main/io.lua) - Simple I/O
 
 ## Command Line
 
@@ -51,6 +52,21 @@ lua -i
   </tr>
   <tr>
     <td>></td><td>greater than</td><td>>=</td><td>greater than or equal to</td><td>~=</td><td>not equal to</td>
+  </tr>
+</table>
+
+### String formatting
+
+```lua
+print(string.format("%s, %s", "Smith", "John"))     --> Smith, John
+```
+
+<table>
+  <tr>
+    <td>`%d`</td><td>`%x`</td><td>`%f`</td><td>`%s`</td><td>`%i`</td>
+  </tr>
+  <tr>
+    <td>decimal</td><td>hexadecimal</td><td>float</td><td>string</td><td>integer</td>
   </tr>
 </table>
 
