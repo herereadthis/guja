@@ -55,18 +55,3 @@ lua -i
   </tr>
 </table>
 
-### String formatting
-
-```lua
-print(string.format("%s, %s", "Smith", "John"))     --> Smith, John
-```
-
-<table>
-  <tr>
-    <td>`%d`</td><td>`%x`</td><td>`%f`</td><td>`%s`</td><td>`%i`</td>
-  </tr>
-  <tr>
-    <td>decimal</td><td>hexadecimal</td><td>float</td><td>string</td><td>integer</td>
-  </tr>
-</table>
-

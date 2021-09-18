@@ -52,5 +52,7 @@ print(string.format("%02d/%02d/%04d", d, m, y)) --> 01/01/1970
 print(string.find(stringA, "rem"))              --> 3 5 (start and end of substring)
 -- global substitution
 print(string.gsub(stringA, "Lorem", "Foo"))     --> Foo Ipsum 1
+-- shorten decimals
+print(string.format("sin(3) = %.4f", math.sin(3)))      --> 0.1411
 
 
