@@ -97,4 +97,15 @@ print(table.concat(r, ", "))        --> 5, 10, 15, 20, 25
 table.remove(r) -- if only 1 arg, then remove behaves like pop
 print(table.concat(r, ", "))        --> 5, 10, 15, 20
 
+print("\ntable.pack examples")
+seq5 = table.pack("p", "q", "r", "s")
+print(table.concat(seq5, ", "))           --> p, q, r, s
+
+print("\ntable.unpack examples")
+seq6 = {"l", "m", "n", "o"}
+a, b, c, d = table.unpack(seq6)
+print(a, b, c, d)                         --> l  m  n  o
+
+
+
 

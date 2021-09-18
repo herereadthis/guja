@@ -50,6 +50,43 @@ end
 
 print(getSum(34, 28, 72, 5, 34))    --> 173
 
+function fooVariadic1 (a, ...)
+  local b, c, d = ...
+  print(string.format("a = %s", a))
+  print(string.format("b = %s", b))
+  print(string.format("c = %s", c))
+  print(string.format("d = %s", d))
+end
+
+print(fooVariadic1("foo", "bar", "baz")) --> a = foo, b = bar, c = baz, d = nil
+
+seq4 = {"a", "b", "c", "d"}
+print("\nselect()")
+print(select(1, "a", "b", "c", "d"))      --> a  b  c  d
+print(select(2, "a", "b", "c", "d"))      --> b  c  d
+-- get the size of the number of args
+print(select("#", "a", "b", "c", "d"))    --> 4
+
+function addVariadic (...)
+  local sum = 0
+  for i = 1, select("#", ...) do
+    sum = sum + select(i, ...) -- will only grab 1st return
+  end
+  return sum
+end
+
+print(addVariadic(3, 6, 9, 12))           --> 30
+
+print("\ntable.unpack examples")
+-- use unpack to use the elements of a list as args in a function
+seq5 = {2, 3, 5, 7, 11}
+a, b, c = table.unpack(seq5)
+print(b, c)                               --> 3  5
+print(addVariadic(table.unpack(seq5)))    --> 28
+
+
+
+
 
 
   
