@@ -15,5 +15,10 @@ io.write("sin(3) = ", math.sin(3), "\n")      --> sin(3) = 0.14112000805987
 --[[
 io.read
 
-
+"a" - reads the whole file
+"l" - reads the next line (drop the newline)
+"L" - reads the next line (keep the newline)
+"n" - reads a number
+num - reads num characters as a string
 ]]
+

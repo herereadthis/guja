@@ -1,16 +1,16 @@
 # guja
 
-1. [hello-world.lua](https://github.com/herereadthis/guja/blob/main/hello-world.lua) - hello world
-1. [comments](https://github.com/herereadthis/guja/blob/main/comments.lua)
-1. [factorial](https://github.com/herereadthis/guja/blob/main/factorial.lua) - simple resursive function, user input
-1. [dofile](https://github.com/herereadthis/guja/blob/main/dofile.lua) - run a chunk from another file
-1. [types](https://github.com/herereadthis/guja/blob/main/types.lua) - basic types: `nil`, `boolean`, `string`, `userdata`, `function`, `thread`, `table`. Also `integer` vs `float`
-1. [math](https://github.com/herereadthis/guja/blob/main/math.lua) - examples from `math` library
-1. [eight-queen](https://github.com/herereadthis/guja/blob/main/eight-queen.lua) - examples of functions to solve a chess problem
-1. [strings](https://github.com/herereadthis/guja/blob/main/strings.lua) - examples, along with `string` library examples
-1. [tables](https://github.com/herereadthis/guja/blob/main/tables.lua) - lists, records, arrays
-1. [functions](https://github.com/herereadthis/guja/blob/main/functions.lua)
-1. [io](https://github.com/herereadthis/guja/blob/main/io.lua) - Simple I/O
+1. [hello-world.lua](https://github.com/herereadthis/guja/blob/main/examples/hello-world.lua) - hello world
+1. [comments](https://github.com/herereadthis/guja/blob/main/examples/comments.lua)
+1. [factorial](https://github.com/herereadthis/guja/blob/main/examples/factorial.lua) - simple resursive function, user input
+1. [dofile](https://github.com/herereadthis/guja/blob/main/examples/dofile.lua) - run a chunk from another file
+1. [types](https://github.com/herereadthis/guja/blob/main/examples/types.lua) - basic types: `nil`, `boolean`, `string`, `userdata`, `function`, `thread`, `table`. Also `integer` vs `float`
+1. [math](https://github.com/herereadthis/guja/blob/main/examples/math.lua) - examples from `math` library
+1. [eight-queen](https://github.com/herereadthis/guja/blob/main/examples/eight-queen.lua) - examples of functions to solve a chess problem
+1. [strings](https://github.com/herereadthis/guja/blob/main/examples/strings.lua) - examples, along with `string` library examples
+1. [tables](https://github.com/herereadthis/guja/blob/main/examples/tables.lua) - lists, records, arrays
+1. [functions](https://github.com/herereadthis/guja/blob/main/examples/functions.lua)
+1. [io](https://github.com/herereadthis/guja/blob/main/examples/io.lua) - Simple I/O, Complete I/O
 
 ## Command Line
 
