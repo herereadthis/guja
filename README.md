@@ -10,7 +10,8 @@
 1. [strings](https://github.com/herereadthis/guja/blob/main/examples/strings.lua) - examples, along with `string` library examples
 1. [tables](https://github.com/herereadthis/guja/blob/main/examples/tables.lua) - lists, records, arrays
 1. [functions](https://github.com/herereadthis/guja/blob/main/examples/functions.lua)
-1. [io](https://github.com/herereadthis/guja/blob/main/examples/io.lua) - Simple I/O, Complete I/O
+1. [io](https://github.com/herereadthis/guja/blob/main/examples/io.lua) - Simple I/O, Complete I/O,  basic file read/write
+1. [os](https://github.com/herereadthis/guja/blob/main/examples/os.lua) - Operating System, `os` library, to interact with machine
 
 ## Command Line
 

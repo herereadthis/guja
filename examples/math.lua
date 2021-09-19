@@ -12,3 +12,8 @@ print(math.floor(3.3))        --> 3 (round down)
 print(math.ceil(3.3))         --> 4 (round up)
 print(math.modf(3.3))         --> 3 (towards zero)
 print(math.modf(-3.3))        --> -3 (towards zero)
+
+print(math.huge)              --> inf
+
+-- convert float to integer
+math.tointeger(2^30)

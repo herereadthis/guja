@@ -22,3 +22,70 @@ io.read
 num - reads num characters as a string
 ]]
 
+--[[
+foo = io.read("*l")
+print(foo)
+]]
+
+--[[
+io.open()
+"r" - read-only mode (default)
+"w" - write mode
+"a" - append mode
+"r+" - update mode, all previous data is preserved
+"w+" - update mode, all previous data is erased
+"a+" -  append update mode, previous data is preserved
+]]
+
+function script_path()
+   local str = debug.getinfo(2, "S").source:sub(2)
+   return str:match("(.*/)")
+end
+
+function getFilePath (filename)
+  return string.format("%s%s", script_path(), filename)
+end
+
+filePath1 = getFilePath("anyone.txt")
+print(filePath1)
+  
+--[[
+Below: reading from a file
+example functions:
+
+io.lines()
+io.open()
+]]
+
+-- see if the file exists
+function getDoesFileExist (filepath)
+  local f = io.open(filepath, "r")
+  if f then 
+    f:close() 
+  end
+  return f ~= nil -- true if file exists
+end
+
+-- puts lines in a file into a table, indexed by line number
+function getLinesFromFile(filepath)
+  local lines = {}
+  
+  if getDoesFileExist(filepath) then 
+    for line in io.lines(filepath) do 
+      lines[#lines + 1] = line
+    end
+  end
+  
+  return lines
+end
+
+local lines = getLinesFromFile(filePath1)
+
+for k,v in pairs(lines) do
+  print('line[' .. k .. ']', v)
+end
+
+--  simple model
+io.write("hello world")
+-- complete model
+io.output():write("hello world", "\n")
