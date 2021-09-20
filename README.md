@@ -1,8 +1,9 @@
 # guja
 
-1. [hello-world.lua](https://github.com/herereadthis/guja/blob/main/examples/hello-world.lua) - hello world
+1. [hello-world](https://github.com/herereadthis/guja/blob/main/examples/hello-world.lua) - hello world
 1. [comments](https://github.com/herereadthis/guja/blob/main/examples/comments.lua)
 1. [factorial](https://github.com/herereadthis/guja/blob/main/examples/factorial.lua) - simple resursive function, user input
+1. [control-structures](https://github.com/herereadthis/guja/blob/main/examples/control-structures.lua) - `if/else`, `while`, `for`, etc.
 1. [dofile](https://github.com/herereadthis/guja/blob/main/examples/dofile.lua) - run a chunk from another file
 1. [types](https://github.com/herereadthis/guja/blob/main/examples/types.lua) - basic types: `nil`, `boolean`, `string`, `userdata`, `function`, `thread`, `table`. Also `integer` vs `float`
 1. [math](https://github.com/herereadthis/guja/blob/main/examples/math.lua) - examples from `math` library
