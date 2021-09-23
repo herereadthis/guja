@@ -98,6 +98,82 @@ end
 
 functionB(4) --> 4 3 2 1
 
+--[[
+Functions are first class values
+]]
+
+print("\nFunctions: first class values")
+local my_var = {foo = print}
+my_var.foo("hello world")       --> hello world
+
+-- writing a function this way...
+function bar (x)
+  return 2 * x
+end
+
+-- ...is the same as writing it this way.
+local baz = function (x)
+  return 2 * x
+end
+
+--[[
+recursive local functions can be buggy if local variable has not been defined at
+the point when the function is called. Instead, create the variable first.
+]]
+local factorial
+factorial = function (n)
+  if n == 0 then return 1
+  else return n * factorial(n - 1)
+  end
+end
+
+--[[
+Lexical scoping, closure
+]]
+
+newCounter = function ()
+  local count = 0
+  return function ()
+    -- this anonymous function has access to the count variable
+    count = count + 1
+    return count
+  end
+end
+
+print("\nFunctions: lexical scoping")
+count1 = newCounter()
+print(count1())             --> 1
+print(count1())             --> 2
+count2 = newCounter()
+print(count2())             --> 1 -- has access to a new local variable count
+print(count1())             --> 3
+
+
+print("\nClosures for sandboxes: Redefine predefined functions")
+-- this example creates a sandbox to try io.open() in safe manner
+do
+  local oldOpen = io.open
+  local getCanAccess = function (filename, mode)
+    -- check access
+  end
+  
+  io.open = function (filename, mode)
+    if getCanAccess(filename, mode) then
+      return oldOpen(filename, mode)
+    else
+      return nil, "access Denided"
+    end
+  end
+end
+
+
+--[[
+Functional Programming
+]]
+
+
+
+
 
 
 

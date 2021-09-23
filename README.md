@@ -12,7 +12,7 @@
 1. [tables](https://github.com/herereadthis/guja/blob/main/examples/tables.lua) - lists, records, arrays
 1. [functions](https://github.com/herereadthis/guja/blob/main/examples/functions.lua)
 1. [io](https://github.com/herereadthis/guja/blob/main/examples/io.lua) - Simple I/O, Complete I/O,  basic file read/write
-1. [os](https://github.com/herereadthis/guja/blob/main/examples/os.lua) - Operating System, `os` library, to interact with machine
+1. [os](https://github.com/herereadthis/guja/blob/main/examples/os.lua) - Operating System, `os` library, to interact with machine]
 
 ## Command Line
 
@@ -24,6 +24,13 @@ lua -i
 ```
 
 ## Random notes
+
+* Tables `{}` are the main data structure. They can be used as lists, sequences, arrays, etc.
+* There is no `switch`. use `elseif` instead
+* There is a `goto`. See [control-structures](https://github.com/herereadthis/guja/blob/main/examples/control-structures.lua)
+* Functions are first-class values
+  * they have the same rights as other types like strings, and can be stored as variables or in tables
+* Functions have lexical scoping - can access variables within their enclosing function
 
 ### Reserved words
 
