@@ -13,6 +13,7 @@
 1. [functions](https://github.com/herereadthis/guja/blob/main/examples/functions.lua)
 1. [io](https://github.com/herereadthis/guja/blob/main/examples/io.lua) - Simple I/O, Complete I/O,  basic file read/write
 1. [os](https://github.com/herereadthis/guja/blob/main/examples/os.lua) - Operating System, `os` library, to interact with machine]
+1. [pattern-matching](https://github.com/herereadthis/guja/blob/main/examples/pattern-matching.lua) - strings: finding, replacing, matching
 
 ## Command Line
 
@@ -61,6 +62,31 @@ lua -i
   </tr>
   <tr>
     <td>></td><td>greater than</td><td>>=</td><td>greater than or equal to</td><td>~=</td><td>not equal to</td>
+  </tr>
+</table>
+
+### Character Classes
+
+<table>
+  <tr>
+    <td>.</td><td>all characters</td>
+    <td>%g</td><td>printable except spaces</td>
+    <td>%u</td><td>uppercase</td>
+  </tr>
+  <tr>
+    <td>%a</td><td>letters</td>
+    <td>%l</td><td>lowercase</td>
+    <td>%w</td><td>alphanumeric</td>
+  </tr>
+  <tr>
+    <td>%c</td><td>control characters</td>
+    <td>%p</td><td>punctuation</td>
+    <td>%x</td><td>hexadecimal</td>
+  </tr>
+  <tr>
+    <td>%d</td><td>digits</td>
+    <td>%s</td><td>spaces</td>
+    <td></td><td></td>
   </tr>
 </table>
 
