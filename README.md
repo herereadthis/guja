@@ -67,6 +67,8 @@ lua -i
 
 ### Character Classes
 
+* Capitalize to represent the opposite, e.g., `%A` is all non-letter characters.
+
 <table>
   <tr>
     <td>.</td><td>all characters</td>

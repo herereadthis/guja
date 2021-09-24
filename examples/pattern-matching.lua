@@ -23,9 +23,12 @@ print("\nstring.gsub demo")
 --[[
 string.gsub(myString, pattern, replacement)
 optional 4th variable is number substitutions
+gsub returns 2 values: new string, and number of replacements
 ]]
-local myStr4 = "lorem ipsum sit dolor amet"
-print(string.gsub(myStr4, "m", "p", 2))   --> lorep ipsup sit dolor amet
+myStr4 = "lorem ipsum sit dolor amet"
+myResult4, rcount = string.gsub(myStr4, "m", "p", 2)
+print(myResult4)    --> lorep ipsup sit dolor amet
+print(rcount)       --> 2
 
 print("\nstring.gmatch demo")
 --[[
@@ -42,6 +45,42 @@ makeWordSequence = function (str)
 end
 
 local wordSequence = makeWordSequence(myStr4)
-print(table.concat(wordSequence, ", "))
+print(table.concat(wordSequence, ", "))   --> lorem, ipsum, sit, dolor, amet
+
+
+--[[
+.	  all characters 	
+%g	printable except spaces 	
+%u	uppercase
+%a	letters 
+%l	lowercase 	
+%w	alphanumeric
+%c	control characters 	
+%p	punctuation 	
+%x	hexadecimal
+%d	digits 	
+%s	spaces 		
+
+Capitalize to get opposite, e.g., %A represents all non-letter charcaters
+
+Escaped Characters:
+
+( ) . % + - * ? [ ] ^ $
+
+use % to escape them, e.g., %? is a question mark
+
++  1 or more characters
+*  0 or more
+-  0 or more lazy repetitions
+?  optional (0 or 1)
+
+brackets for a character set
+]]
+
+_, vowelsCount = string.gsub(myStr4, "[AEIOUaeiou]", "")
+print(_)                        --> lrm psm st dlr mt
+print(vowelsCount)              --> 9
+
+
 
 
