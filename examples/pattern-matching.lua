@@ -75,6 +75,9 @@ use % to escape them, e.g., %? is a question mark
 ?  optional (0 or 1)
 
 brackets for a character set
+
+
+^  match at beginning of string
 ]]
 
 _, vowelsCount = string.gsub(myStr4, "[AEIOUaeiou]", "")
@@ -82,5 +85,8 @@ print(_)                        --> lrm psm st dlr mt
 print(vowelsCount)              --> 9
 
 
-
+--[[
+Captures: skipped (not interested)
+Replacements: skipped (not interested)
+]]
 

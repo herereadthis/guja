@@ -1,5 +1,7 @@
 # guja
 
+## Guides
+
 1. [hello-world](https://github.com/herereadthis/guja/blob/main/examples/hello-world.lua) - hello world
 1. [comments](https://github.com/herereadthis/guja/blob/main/examples/comments.lua)
 1. [factorial](https://github.com/herereadthis/guja/blob/main/examples/factorial.lua) - simple resursive function, user input
@@ -7,13 +9,17 @@
 1. [dofile](https://github.com/herereadthis/guja/blob/main/examples/dofile.lua) - run a chunk from another file
 1. [types](https://github.com/herereadthis/guja/blob/main/examples/types.lua) - basic types: `nil`, `boolean`, `string`, `userdata`, `function`, `thread`, `table`. Also `integer` vs `float`
 1. [math](https://github.com/herereadthis/guja/blob/main/examples/math.lua) - examples from `math` library
-1. [eight-queen](https://github.com/herereadthis/guja/blob/main/examples/eight-queen.lua) - examples of functions to solve a chess problem
 1. [strings](https://github.com/herereadthis/guja/blob/main/examples/strings.lua) - examples, along with `string` library examples
 1. [tables](https://github.com/herereadthis/guja/blob/main/examples/tables.lua) - lists, records, arrays
 1. [functions](https://github.com/herereadthis/guja/blob/main/examples/functions.lua)
 1. [io](https://github.com/herereadthis/guja/blob/main/examples/io.lua) - Simple I/O, Complete I/O,  basic file read/write
 1. [os](https://github.com/herereadthis/guja/blob/main/examples/os.lua) - Operating System, `os` library, to interact with machine]
 1. [pattern-matching](https://github.com/herereadthis/guja/blob/main/examples/pattern-matching.lua) - strings: finding, replacing, matching
+1. [pattern-matching](https://github.com/herereadthis/guja/blob/main/examples/pattern-matching.lua) - strings: finding, replacing, matching
+
+## Demos
+1. [eight-queen](https://github.com/herereadthis/guja/blob/main/examples/eight-queen.lua) - examples of functions to solve a chess problem
+1. [word-frequency](https://github.com/herereadthis/guja/blob/main/examples/word-frequency.lua) - find most frequent words in a text
 
 ## Command Line
 
