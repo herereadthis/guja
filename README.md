@@ -15,7 +15,7 @@
 1. [io](https://github.com/herereadthis/guja/blob/main/examples/io.lua) - Simple I/O, Complete I/O,  basic file read/write
 1. [os](https://github.com/herereadthis/guja/blob/main/examples/os.lua) - Operating System, `os` library, to interact with machine, date
 1. [pattern-matching](https://github.com/herereadthis/guja/blob/main/examples/pattern-matching.lua) - strings: finding, replacing, matching
-1. [pattern-matching](https://github.com/herereadthis/guja/blob/main/examples/pattern-matching.lua) - strings: finding, replacing, matching
+1. [binary](https://github.com/herereadthis/guja/blob/main/examples/binary.lua) - pack and unpack data to binary
 
 ## Demos
 1. [eight-queen](https://github.com/herereadthis/guja/blob/main/examples/eight-queen.lua) - examples of functions to solve a chess problem
