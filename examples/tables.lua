@@ -58,6 +58,21 @@ print(#myRecord)              --> 0
 
 print("\ntable traversal")
 
+--Traversal
+--pairs makes no guarentee things are returned in order. Only that they return once per thing
+table1 = {10, print, x = 12, k = "hi"}
+
+print("\npairs demo")
+for k, v in pairs(table1) do
+  print(k, v)                             --> 1  10 | 2  function | k  hi | x  12
+end
+
+print("\nipairs demo: indexed values")
+for k, v in ipairs(table1) do
+  print(k, v)                             --> 1  10 | 2  function
+end
+
+
 function tableTraversePrint (t)
   for k, v in pairs(t) do
     print(k, v)

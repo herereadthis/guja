@@ -57,9 +57,43 @@ If the node is the last in the list, then its pointer is null.
 
 There are 3 main types of linked lists:
 
--Singly: Each node only has 1 pointer, to the next node.
+* Singly: Each node only has 1 pointer, to the next node.
+* Doubly: Each node has 2 pointers: to the next node and the previous node. If
+  it is the head node, then its previous pointer is null
+* Circular: can either be Singly or Doubly, but the last node points to either
+  the head node, or any other previouly linked node.
+  
+Advantages of a linked list
+* It grows or shrinks in memory as needed. No need to allocate correct memory 
+  prior to creating it.
+* Nodes can be inserted or removed from anwwhere without having to reorganize
+  the entire data structure.
+  
+Disadvantages
+* Nodes must be traversed sequentially, so searching is slow.
+* It takes up more memory because some has to be set aside for the pointers.
+  
+In Lua, each node is a table.
 ]]
 
+local sequence1 = {12, "hi", "89", "foo"}
 
-  
+local list = nil
+for k, v in pairs(sequence1) do
+  list = {next = list, value = v}
+end
+
+print("\nLinked list demo")
+print(list.value)                   --> foo
+print(list.next.value)              --> 89
+print(list.next.next.value)         --> hi
+print(list.next.next.next.value)    --> 12
+
+
+-- queues (skipped?)
+
+-- Reverse or index tables are like fooToBarMaps in javascript
+-- use these instead of searching
+
+
     
