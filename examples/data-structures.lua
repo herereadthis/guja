@@ -89,7 +89,6 @@ print(list.next.value)              --> 89
 print(list.next.next.value)         --> hi
 print(list.next.next.next.value)    --> 12
 
-
 -- queues (skipped?)
 
 -- Reverse or index tables are like fooToBarMaps in javascript
