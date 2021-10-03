@@ -16,6 +16,8 @@
 1. [os](https://github.com/herereadthis/guja/blob/main/examples/os.lua) - Operating System, `os` library, to interact with machine, date
 1. [pattern-matching](https://github.com/herereadthis/guja/blob/main/examples/pattern-matching.lua) - strings: finding, replacing, matching
 1. [binary](https://github.com/herereadthis/guja/blob/main/examples/binary.lua) - pack and unpack data to binary
+1. Serialization (skipped)
+1. [compilation](https://github.com/herereadthis/guja/blob/main/examples/compilation.lua)
 
 ## Demos
 1. [eight-queen](https://github.com/herereadthis/guja/blob/main/examples/eight-queen.lua) - examples of functions to solve a chess problem
