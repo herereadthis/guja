@@ -18,6 +18,7 @@
 1. [binary](https://github.com/herereadthis/guja/blob/main/examples/binary.lua) - pack and unpack data to binary
 1. Serialization (skipped)
 1. [compilation](https://github.com/herereadthis/guja/blob/main/examples/compilation.lua)
+1. [errors](https://github.com/herereadthis/guja/blob/main/examples/errors.lua) - and how to handle them
 
 ## Demos
 1. [eight-queen](https://github.com/herereadthis/guja/blob/main/examples/eight-queen.lua) - examples of functions to solve a chess problem
@@ -99,4 +100,15 @@ lua -i
     <td></td><td></td>
   </tr>
 </table>
+
+### Precompiled code
+
+Precompiled code is not always smaller, but it loads faster and it serves as a protection against accidental changes
+
+```bash
+# -o means create a new file
+luac -o hello-world.lc hello-world.lua
+# precompiled code can run with lua command
+lua hello-world.lc
+```
 
