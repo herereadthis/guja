@@ -113,3 +113,11 @@ luac -o hello-world.lc hello-world.lua
 lua hello-world.lc
 ```
 
+### require
+
+```bash
+# Add LUA_PATH environmental variable to .bash_profile
+export LUA_PATH="~/lua/?.lua;;"
+# confirm with printenv LUA_PATH
+```
+

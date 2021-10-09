@@ -25,21 +25,29 @@ local mf = require "myModule".foo
 mf()
 ]]
 
-
+-- https://stackoverflow.com/questions/6380820/get-containing-path-of-lua-file
 function script_path()
-   local str = debug.getinfo(2, "S").source:sub(2)
-   return str:match("(.*/)")
+  local str = debug.getinfo(2, "S").source:sub(2)
+  return str:match("(.*/)") or "."
 end
 
-print(script_path())
-print(os.getenv("LUA_PATH"))
-LUA_PATH = os.getenv("LUA_PATH") .. ';' .. script_path() .. '?.lua'
-print(os.getenv("LUA_PATH"))
+--print(script_path())
+print("\narg[0]")
+print(arg[0])
 
-local moduleDemo = require "module-demo"
+print("\npathWithFilename")
+pathWithFilename=os.getenv("PWD") or io.popen("cd"):read'*all'
+print(pathWithFilename)
 
+dir = os.getenv("PWD") or io.popen("cd"):read()
 
-print(os.getenv("LUA_PATH"))
+print("\ndir")
+print(dir)
+print("\npackage.path")
+print(package.path)
+package.path = package.path .. ';' .. dir .. '?.lua;' .. script_path() .. '?.lua'
+print("\npackage.path updated")
+print(package.path)
 
 -- all valid
 local m = require "math"
@@ -59,7 +67,12 @@ myModule
 myModule.lua
 /users/herereadthis/lua/myModule.lua
 
-path is determined by global variable LUA_PATH
+path is determined by global variable LUA_PATH and package.path
 ]]
+
+local moduleDemo = require "module-demo"
+
+-- this is calling a module function
+moduleDemo.foo()
 
 
