@@ -31,7 +31,6 @@ function script_path()
   return str:match("(.*/)") or "."
 end
 
---print(script_path())
 print("\narg[0]")
 print(arg[0])
 
@@ -39,22 +38,21 @@ print("\npathWithFilename")
 pathWithFilename=os.getenv("PWD") or io.popen("cd"):read'*all'
 print(pathWithFilename)
 
-dir = os.getenv("PWD") or io.popen("cd"):read()
-
 print("\ndir")
+dir = os.getenv("PWD") or io.popen("cd"):read()
 print(dir)
-print("\npackage.path")
-print(package.path)
-package.path = package.path .. ';' .. dir .. '?.lua;' .. script_path() .. '?.lua'
+
 print("\npackage.path updated")
+package.path = package.path .. ';' .. dir .. '?.lua;' .. script_path() .. '?.lua'
+package.path = package.path .. ';' .. dir .. '?/init.lua;' .. script_path() .. '?/init.lua'
 print(package.path)
 
 -- all valid
+print("\nmath demo")
 local m = require "math"
 local m2 = require "math".sin
 print(m.sin(0.5))
 print(m2(0.6))
-
 
 --[[
 Lua runs on ANSI C platform which does not have the concept of directories. It
@@ -72,7 +70,17 @@ path is determined by global variable LUA_PATH and package.path
 
 local moduleDemo = require "module-demo"
 
+moduleDemo.hello()
+moduleDemo.lorem()
+
+-- package demo
+local fooDemo = require "foo-package"
+local fooSubmodule = require "foo-package/bar"
+
+
 -- this is calling a module function
-moduleDemo.foo()
+fooDemo.hello()
+fooDemo.lorem()
+fooSubmodule.baz()
 
 

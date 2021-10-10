@@ -1,3 +1,5 @@
+-- See this package in use at [modules.lua](+../modules.lua)
+
 local M = {}
 
 M.hello = function ()
