@@ -20,6 +20,7 @@
 1. [compilation](https://github.com/herereadthis/guja/blob/main/examples/compilation.lua)
 1. [errors](https://github.com/herereadthis/guja/blob/main/examples/errors.lua) - and how to handle them
 1. [modules](https://github.com/herereadthis/guja/blob/main/examples/modules.lua) - modules, packages, and `require`
+1. [iterators](https://github.com/herereadthis/guja/blob/main/examples/iterators.lua) - going beyond for loop
 
 ## Demos
 1. [eight-queen](https://github.com/herereadthis/guja/blob/main/examples/eight-queen.lua) - examples of functions to solve a chess problem
